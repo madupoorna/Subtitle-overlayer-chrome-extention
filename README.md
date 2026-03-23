@@ -1,8 +1,5 @@
-Since you are planning to host this on GitHub, a professional README.md is essential to help other developers understand your tech stack and help users install the extension manually.
-
-Here is a complete, well-formatted README tailored to your project.
-
 Universal Subtitle Overlayer
+
 A lightweight, privacy-first Chrome Extension that injects a customizable subtitle overlay on top of any online video player. Perfect for platforms that lack native CC support or for users who prefer their own .srt files.
 
 🚀 Features
