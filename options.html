@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subtitle Settings</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
+        .card { background: white; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .space { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="range"] { width: 100%; }
+        #status { color: green; font-size: 0.9em; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Subtitle Settings</h2>
+
+	<div class="space" style="background: #eef2ff; padding: 10px; border-radius: 5px; display: flex; align-items: center; justify-content: space-between;">
+   	 	<label style="margin-bottom: 0;">Enable Subtitles</label>
+    		<input type="checkbox" id="enabled" checked style="width: 20px; height: 20px; cursor: pointer;">
+	</div>
+        
+        <div class="space">
+            <label>1. Upload SRT</label>
+            <input type="file" id="srtFile" accept=".srt">
+            <div id="status">No file loaded</div>
+        </div>
+
+        <div class="space">
+            <label>2. Vertical Position</label>
+            <input type="range" id="posV" min="2" max="95" value="10">
+            <span id="posVVal">10%</span>
+        </div>
+
+        <div class="space">
+            <label>3. Font Size</label>
+            <input type="range" id="fontSize" min="12" max="60" value="24">
+            <span id="fontSizeVal">24px</span>
+        </div>
+
+        <div class="space">
+            <label>4. Sync Delay (Seconds)</label>
+            <input type="number" id="delay" step="0.1" value="0">
+        </div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>

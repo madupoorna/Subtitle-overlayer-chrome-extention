@@ -1,0 +1,16 @@
+#gemini-sub-overlay {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647; /* Maximum possible z-index */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  pointer-events: none; /* Allows clicking "through" the subs to the video */
+  max-width: 80%;
+}
